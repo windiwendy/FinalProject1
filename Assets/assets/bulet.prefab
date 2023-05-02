@@ -148,6 +148,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Hiteffect: {fileID: 4635574986391543017, guid: acf64add4a8e91b459bc50a29dad84e9, type: 3}
+  explodeAffect: {fileID: 0}
 --- !u!82 &-7880315887506170446
 AudioSource:
   m_ObjectHideFlags: 0
