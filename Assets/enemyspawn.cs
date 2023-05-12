@@ -5,8 +5,7 @@ using UnityEngine;
 public class enemyspawn : MonoBehaviour
 {
     public float spawnRate = 1f;
-
-    public GameObject[] enemyObj;
+    [SerializeField]   public GameObject[] enemyObj;
     public bool canSpawn = true;
 
 
@@ -15,7 +14,7 @@ public class enemyspawn : MonoBehaviour
     void Start()
     {
         StartCoroutine(Spawner());
-
+       
     }
 
     IEnumerator Spawner()

@@ -1,12 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static UnityEngine.GraphicsBuffer;
 
 public class EnemyDamage : MonoBehaviour
 {
-    public Player_health playerh;
+    [SerializeField] Player_health playerh ;
     public int damage;
 
+    private void Start()
+    {
+       playerh = FindObjectOfType<Player_health>();
+    }
 
     // Update is called once per frame
     private void OnCollisionEnter2D(Collision2D collision)
