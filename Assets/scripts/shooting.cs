@@ -32,4 +32,7 @@ public class shooting : MonoBehaviour
         rb2.AddForce(firePoint.up * bulletForce, ForceMode2D.Impulse);
 
     }
+
+
+
 }
