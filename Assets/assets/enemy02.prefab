@@ -166,6 +166,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 6
   currentHealth: 0
+  point: 10
+  scoreManager: {fileID: 0}
 --- !u!1 &1295933888862430128
 GameObject:
   m_ObjectHideFlags: 0

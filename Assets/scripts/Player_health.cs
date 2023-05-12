@@ -8,13 +8,17 @@ public class Player_health : MonoBehaviour
 {
 
     public int phealth;
-    public int MaxHealth = 10;
-    //public health healthBar;
+    public int MaxHealth = 15;
+    public healthbar healthBar;
 
     // Start is called before the first frame update
     void Start()
     {
+
+
         phealth = MaxHealth;
+
+        healthBar.SetMaxHealth(MaxHealth);
     }
 
     // Update is called once per frame
@@ -38,5 +42,7 @@ public class Player_health : MonoBehaviour
             Destroy(gameObject);
 
         }
+
+        healthBar.SetHealth(phealth);
     }
 }

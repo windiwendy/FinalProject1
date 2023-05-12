@@ -6,12 +6,16 @@ public class enemyHealth : MonoBehaviour
 {
     public int maxHealth = 3;
     public int currentHealth;
+    public int point;
+
+    public ScoreManager scoreManager;
 
 
 
 
     void Start()
     {
+        scoreManager = FindObjectOfType<ScoreManager>();    
         currentHealth = maxHealth;
         
     }
@@ -27,7 +31,10 @@ public class enemyHealth : MonoBehaviour
         currentHealth -= damage;
         if(currentHealth <= 0 )
         {
+            
             Destroy(gameObject);
+            scoreManager.ChangesScore(point);
         }
+        
     }
 }

@@ -8,11 +8,24 @@ public class enemyspawn : MonoBehaviour
     [SerializeField]   public GameObject[] enemyObj;
     public bool canSpawn = true;
 
+   // public Player_health Phealth;
+    
+
+
+
+
 
 
     // Start is called before the first frame update
     void Start()
     {
+        //Phealth= FindObjectOfType<Player_health>();
+
+
+    
+        
+
+
         StartCoroutine(Spawner());
        
     }

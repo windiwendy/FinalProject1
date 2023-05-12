@@ -250,3 +250,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 3
   currentHealth: 0
+  point: 5
+  scoreManager: {fileID: 0}
