@@ -9,7 +9,7 @@ public class enemyHealth : MonoBehaviour
     public int point;
 
     public ScoreManager scoreManager;
-    public GameObject Explosion;
+    //public GameObject Explosion;
 
 
 
@@ -31,10 +31,11 @@ public class enemyHealth : MonoBehaviour
         currentHealth -= damage;
         if(currentHealth <= 0 )
         {
-            
+
             Destroy(gameObject);
-            GameObject effect = Instantiate(Explosion, transform.position, Quaternion.identity);
+            
             scoreManager.ChangesScore(point);
+        
         }
         
     }
