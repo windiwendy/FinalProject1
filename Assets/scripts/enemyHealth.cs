@@ -9,7 +9,7 @@ public class enemyHealth : MonoBehaviour
     public int point;
 
     public ScoreManager scoreManager;
-
+    public GameObject Explosion;
 
 
 
@@ -33,6 +33,7 @@ public class enemyHealth : MonoBehaviour
         {
             
             Destroy(gameObject);
+            GameObject effect = Instantiate(Explosion, transform.position, Quaternion.identity);
             scoreManager.ChangesScore(point);
         }
         

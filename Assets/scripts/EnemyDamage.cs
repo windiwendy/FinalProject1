@@ -7,10 +7,15 @@ public class EnemyDamage : MonoBehaviour
 {
     [SerializeField] Player_health playerh ;
     public int damage;
+    
 
-    private void Start()
+
+     void Start()
     {
-       playerh = FindObjectOfType<Player_health>();
+        
+        playerh = FindObjectOfType<Player_health>();
+        
+
     }
 
     // Update is called once per frame

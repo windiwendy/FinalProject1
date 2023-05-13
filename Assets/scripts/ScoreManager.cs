@@ -11,17 +11,17 @@ public class ScoreManager : MonoBehaviour
     public int currentSc;
 
 
-   
+    private void Start()
+    {
+        PlayerPrefs.SetString("CurrentScore", "0");
+
+    }
     public void ChangesScore(int score)
     {
         currentSc += score;
         scoreText.text = currentSc.ToString();
-        
+        PlayerPrefs.SetString("CurrentScore", scoreText.text);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+
 }
